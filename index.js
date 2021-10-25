@@ -1,5 +1,7 @@
 // importa a biblioteca 'path' para obter o caminho absoluto da aplicação
 var path = require("path");
+
+
 // importa a biblioteca do framework express
 // http://expressjs.com/pt-br/api.html
 const express = require("express");
@@ -7,6 +9,8 @@ const express = require("express");
 const app = express();
 // definição da porta onde o servidor web será criado/acessado
 const port = 3000;
+
+
 // importa a bilioteca para conexão com o banco de dados mysql
 const mysql = require("mysql");
 

@@ -1,25 +1,121 @@
+html{
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 body {
   background-color: #cce6ff;
 }
+
 header {
-  text-align: center;
-  height: 100px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-top: 1px;
   background-color: #3399ff;
   color: #ffffff;
   font-size: x-large;
+  border-radius: 8px;
 }
+
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formsContent{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 h3 {
   margin-top: 2px;
   text-align: center;
   background-color: #80bfff;
+  width: 100%;
 }
+
 form {
-  width: 45%;
-  display: inline-block;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 20px;
 }
+
+fieldset{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+input{
+  margin: 10px;
+}
+
+.spacing{
+  margin-bottom: 42px;
+}
+
 footer {
-  margin-top: 3%;
-  text-align: center;
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.line{
+  width: 50%;
+  height: 5px;
+  background-color:#3399ff;
+  border-radius: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: 0.8;
+}
+
+.buttonsArea{
+  display: flex;
+  flex-direction: row;
+}
+
+button{
+  font-family: 'Ubuntu', sans-serif;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+button:hover{
+  opacity: 0.8;
+}
+
+.submit{
+  color: #fff;
+  background-color: rgb(0, 185, 0);
+}
+
+.reset{
+  color: #fff;
+  background-color: rgb(9, 25, 95);
 }

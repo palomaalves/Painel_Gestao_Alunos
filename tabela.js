@@ -1,5 +1,6 @@
 const mysql = require("mysql");
 
+// Cria conexão com o banco de dados MySQL
 const connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
@@ -23,24 +24,8 @@ function criarTabela(conn) {
   });
 }
 
-function inserirDados(conn) {
-  const sql = "insert into aluno(nome, cpf) values ?";
-  const values = [
-    ["Vinicius Rodrigues", "12345678"],
-    ["Davi Souza", "4567890"],
-    ["Paloma Correa", "7974567"],
-    ["Matheus Barros", "4567891"],
-  ];
-  conn.query(sql, [values], function (error, results, fields) {
-    if (error) return console.log(error);
-    console.log("Registro adicionados");
-    conn.end();
-  });
-}
-
 connection.connect((error) => {
   if (error) return console.log(error);
   console.log("Banco de dados conectado");
   criarTabela(connection);
-  inserirDados(connection);
 });

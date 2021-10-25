@@ -1,98 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/student-icon.png">
     <link rel="stylesheet" href="style.css" />
     <title>Painel de Gestão de Alunos</title>
   </head>
   <body>
+
     <header>
+      <img width="150" src="assets/student-icon.png" alt="img">
       <h1>Painel de Gestão de Alunos</h1>
     </header>
 
-    <form action="/add" method="POST">
-      <fieldset>
-        <h3>Adicionar novo aluno</h3>
-        <input type="text" id="nome" name="nome" required placeholder="Nome" />
-        <br /><br />
-        <input type="text" id="cpf" name="cpf" required placeholder="CPF" />
-        <br /><br />
-        <button type="reset">Limpar</button>
-        <button type="submit">Enviar</button>
-      </fieldset>
-    </form>
+    <div class="content">
+      <div class="formsContent">
+        <form action="/add" method="POST">
+          <fieldset>
+            <h3>Adicionar aluno</h3>
+            <input type="text" id="nome" name="nome" required placeholder="Nome" />
+            <input type="text" id="cpf" name="cpf" required placeholder="CPF" />
+            <div class="spacing"></div>
+            <div class="buttonsArea">
+              <button class="submit" type="submit">Enviar</button>
+              <button class="reset" type="reset">Limpar</button>
+            </div>
+          </fieldset>
+        </form>
+    
+        <form action="/update" method="POST">
+          <fieldset>
+            <h3>Atualizar aluno</h3>
+            <input
+              type="text"
+              id="id"
+              name="id"
+              required
+              placeholder="ID do aluno"
+            />
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              required
+              placeholder="Novo nome"
+            />
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              required
+              placeholder="Novo CPF"
+            />
+            <div class="buttonsArea">
+              <button class="submit" type="submit">Enviar</button>
+              <button class="reset" type="reset">Limpar</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    
+      <div class="formsContent">
+        <form action="/view" method="POST">
+          <fieldset>
+            <h3>Visualizar aluno</h3>
+            <input
+              type="text"
+              id="id"
+              name="id"
+              required
+              placeholder="ID do aluno"
+            />
+            <div class="buttonsArea">
+              <button class="submit" type="submit">Enviar</button>
+              <button class="reset" type="reset">Limpar</button>
+            </div>
+          </fieldset>
+        </form>
+    
+        <form action="/delete" method="POST">
+          <fieldset>
+            <h3>Excluir aluno</h3>
+            <input
+              type="text"
+              id="id"
+              name="id"
+              required
+              placeholder="ID do aluno"
+            />
+            <div class="buttonsArea">
+              <button class="submit" type="submit">Enviar</button>
+              <button class="reset" type="reset">Limpar</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>      
+    </div>
 
-    <form action="/view" method="POST">
-      <fieldset>
-        <h3>Visualizar um aluno</h3>
-        <input
-          type="text"
-          id="id"
-          name="id"
-          required
-          placeholder="ID do aluno"
-        />
-        <br /><br />
-        <button type="reset">Limpar</button>
-        <button type="submit">Enviar</button>
-        <br /><br /><br />
-      </fieldset>
-    </form>
-
-    <form action="/update" method="POST">
-      <fieldset>
-        <h3>Atualizar um aluno</h3>
-        <input
-          type="text"
-          id="id"
-          name="id"
-          required
-          placeholder="ID do aluno"
-        />
-        <br /><br />
-        <input
-          type="text"
-          id="nome"
-          name="nome"
-          required
-          placeholder="Novo nome"
-        />
-        <br /><br />
-        <input
-          type="text"
-          id="cpf"
-          name="cpf"
-          required
-          placeholder="Novo CPF"
-        />
-        <br /><br />
-        <button type="reset">Limpar</button>
-        <button type="submit">Enviar</button>
-      </fieldset>
-    </form>
-
-    <form action="/delete" method="POST">
-      <fieldset>
-        <h3>Excluir um aluno</h3>
-        <input
-          type="text"
-          id="id"
-          name="id"
-          required
-          placeholder="ID do aluno"
-        />
-        <br /><br />
-        <button type="reset">Limpar</button>
-        <button type="submit">Enviar</button>
-        <br /><br /><br />
-      </fieldset>
-    </form>
 
     <footer>
-      <hr />
+      <div class="line"></div>
       <h4>
         <a href="/alunos">Visualizar todos os alunos</a>
       </h4>
     </footer>
+
   </body>
 </html>

@@ -1,7 +1,6 @@
 {
   "name": "testenode",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
@@ -17,5 +16,14 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palomaalves/testenode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/palomaalves/testenode/issues"
+  },
+  "homepage": "https://github.com/palomaalves/testenode#readme",
+  "description": ""
 }
