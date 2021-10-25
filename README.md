@@ -34,7 +34,7 @@
     <img alt="MYSQL" width="110" src="https://img.shields.io/badge/mysql%20-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
   </div>
 
-  <h3>Objetivo era fazer um painel de gestão de alunos, usando node com sql como principais tecnologias !</h3>
+  <h3>Objetivo era fazer um painel de gestão de alunos, usando node, express & sql como principais tecnologias !</h3>
 
 </html>
 
