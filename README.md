@@ -4,7 +4,9 @@
   </div>
   
   <div align="left">
-    Grupo 02:
+  
+    ### Grupo 02:
+
     <ul>
       <li>
         Davi Souza da Silva Veras
@@ -22,6 +24,7 @@
         Vinicius Rodrigues Cardoso Silva
       </li>
     </ul>
+
   </div>
   
   <h2>🎯 Objetivo do projeto</h2>
@@ -39,15 +42,19 @@
 </html>
 
 ## Para instalar as depedências do projeto
+
 ```
 npm install
 ```
 
 ### Iniciar o servidor local
+
 ```
 npm start
 ```
+
 ### O servidor local será inicializado na porta 3000
+
 ```
 localhost:3000
 ```
