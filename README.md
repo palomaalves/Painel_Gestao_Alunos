@@ -4,6 +4,7 @@
   </div>
   
   <div align="left">
+  
     Grupo 02:
     <ul>
       <li>
@@ -39,15 +40,19 @@
 </html>
 
 ## Para instalar as depedências do projeto
+
 ```
 npm install
 ```
 
 ### Iniciar o servidor local
+
 ```
 npm start
 ```
+
 ### O servidor local será inicializado na porta 3000
+
 ```
 localhost:3000
 ```
